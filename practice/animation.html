@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont{
+            display:flex;
+            border:2px solid black ;
+            width: 90%;
+        }
+        .box{
+            background-color: aqua;
+            margin :4px;
+            width:44px;
+            height:330px;
+            border: 2px dashed salmon;
+            position: relative;
+            /* animation-name: shr;
+            animation-duration: 1s;
+            animation-iteration-count : 2;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+        */ 
+        animation: sh2 2s ease-in-out 1ms 12 backwards;
+    
+             }
+        @keyframes sh2 {
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+            }
+        }   
+        @keyframes shr {
+            from{
+                width:200px;
+            }
+            to{
+                width:400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="box">box1 lorem1000</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

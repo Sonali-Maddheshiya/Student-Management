@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox tutorial</title>
+    <style>
+        .container{
+            display: flex;
+            height: 444px;
+            width: 90%;
+            border: 2px solid rgb(198, 51, 51);
+            /* flex property for container */
+            /* flex-direction: row; by default
+            flex-direction: row-reverse;
+            flex-direction: column; */
+            /* flex-wrap: wrap; to male it responsive*/
+            flex-flow: row wrap;/*shortcut for flex wwrap and direction*/
+            justify-content: center;
+            /*justify-content: space-evenly;
+            justify-content: space-between;
+            /* justify-content: space-around; */
+           /* align-items: center;
+            align-items: stretch; */
+            /* align-items: center;
+            align-items: center; */
+            
+        }
+        .item{
+            border: 2px solid black;
+            border-radius: 44px;
+            height: 50px;
+            padding: 15px 30px;
+            background-color: bisque;       
+         }
+         #item-1{
+            order: 3;
+            flex-grow: 3;
+         }#item-4{
+            order: 0;
+         }
+         #item-3{
+            order: 7;
+            /* flex-grow: 9; */
+            flex-shrink: 3;
+         }
+
+    </style>
+</head>
+<body>
+    <h1>this is flexbox </h1>
+    <div class="container">
+        <div class="item" id="item-1">first</div>
+        <div class="item" id="item-2">second</div>
+        <div class="item" id="item-3">third</div>
+        <div class="item" id="item-4">fourth</div>
+        <div class="item" id="item-5">fifth</div>
+        <div class="item" id="item-6">sixth</div>
+    </div>
+    
+</body>
+</html>

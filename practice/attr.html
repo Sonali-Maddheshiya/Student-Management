@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attribute and nth child pseudo sekector</title>
+    <style>
+        .container
+        {
+            display: block;
+            width: 344px;
+            margin:auto;
+        }
+        input{
+            display: block;
+        }
+        input[placeholder]{
+            font: 4px;
+            place-items: 3px;
+            border: 59px solid black;
+
+        }
+        /* this aplly for 3 child */
+        li:nth-child(3)
+        {
+            font: bolder;
+            color: rgb(33, 41, 41);
+        }
+        /* for every 2nd child */
+         li:nth-child(2n+0)
+        {
+            font: bolder;
+            color: aqua;
+        }
+        li:nth-child(odd)
+        {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item1">item1</li>
+            <li class="item" id="item1">item2</li>
+            <li class="item" id="item1">item3</li>
+            <li class="item" id="item1">item4</li>
+            <li class="item" id="item1">item5</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

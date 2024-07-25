@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array and object</title>
+</head>
+<body>
+    <div class="cont">kjhgiu-01</div>
+    <div class="cont">kjhgiu-02</div>
+    <div class="cont">kjhgiu-03</div>
+    <div class="cont">kjhgiu-04</div>
+    <div class="cont">kjhgiu-05</div>
+    <div class="cont">kjhgiu-06</div>
+    <script>
+        // let myvar1=34;
+        // let myvar2="string";
+        // let myvar3=true;
+        // let myvar4=null;
+        // let myvar5=undefined;
+        // console.log(myvar1)
+        // console.log(myvar2)
+        // console.log(myvar3)
+        // console.log(myvar4)
+        // console.log(myvar5)
+
+        let employee={
+name:"shri",
+salary:64,
+channel:"shj",
+'channel 2':"shje",
+add:65
+        }
+        console.log(employee)// objects
+
+        console.log(employee.channel)
+        console.log(employee['channel'])
+        console.log(employee['channel 2'])
+
+//array
+// let  nam=["shrish",4,43,2,1,undefined]
+let  nam=new Array("shrish",4,43,2,1,undefined)
+console.log(nam);
+nam=nam.sort();
+console.log(nam);
+nam.push("hgfja");
+nam=nam.sort();
+console.log(nam);
+let hf=new Array(23)//here array with 23 undefined elemnt will be generated
+console.log(hf)
+console.log(nam.length);
+    </script>
+</body>
+</html>

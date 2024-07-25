@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulating dom (document object model)</title>
+</head>
+<body>
+    <div class="container" id ='class'>
+        <ul id="nav">
+            <li >home</li>
+            <li>contact</li>
+            <li>about</li>
+            <li>ser</li>
+            <li>jkf</li>
+        </ul>
+    </div>
+    <div class="container">another container</div>
+    <script>
+        let main=document.getElementById('class')
+        console.log(main)
+        let nav=document.getElementById('nav')
+        console.log(nav)
+        let container=document.getElementsByClassName('container')
+        console.log(container)
+        
+        // let sel=document.querySelector(".container")
+        // console.log(sel)
+        
+        //using query selector
+        // let sel=document.querySelector("#nav>li")
+        // console.log(sel)
+        
+        //using query selector all
+        // let sel=document.querySelectorAll("#nav>li")
+        // console.log(sel)
+    </script>
+</body>
+</html>

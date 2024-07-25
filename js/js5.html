@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and cond</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>list-1</li>
+            <li>list-2</li>
+            <li>list-3</li>
+            <li>list-4</li>
+            <li>list-5</li>
+            <li>list-6</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "this is string"
+        var string1 = "this is string2"
+        console.log(string1)
+        let a="u";
+        // let a="u6"; we cant define this we as we are assign it using let in the same block we can define it in another block
+
+        {
+             let  a="u7"
+             //here it works only for this block
+             console.log(a)
+            }
+            console.log(a)
+            
+            const b ="this cant be changed"
+            // b="i wmt to change"
+            console.log(b)
+            let age =10;
+            //if else ladder
+//           
+let key=44 
+switch (key) {
+    case 4:
+        console.log("the value of cup is 4")
+    case 41:
+        console.log("the value of cup is 41")
+    case 42:
+        console.log("the value of cup is 42")
+    case 4:
+        console.log("the value of cup is 43")
+        break;
+
+    default:
+    console.log("the value of cup is none of the option 4,41,42,43")
+        break;
+}
+    </script>
+</body>
+</html>

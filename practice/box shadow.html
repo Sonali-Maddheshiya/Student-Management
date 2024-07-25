@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and texr shadow</title>
+    <style>
+        .cont{
+            display: flex;
+            border: 2px solid red;
+            padding: 2px 4px;
+
+        }
+        .itm{
+            margin: 23px;
+            padding: 23px 12px;
+            border :2px solid black;
+            background-color: aliceblue;
+            /* box shadow:  offsetx offset y  */
+            /* box shadow:  offsetx offset y  color*/
+            /* box shadow:  offsetx offset y  blur radius color negative can be value*/
+            /* box shadow:  offsetx offset y  blur radius spread radius color*/
+            
+            /* box-shadow: 4px 4px 10px; */
+            box-shadow: inset 4px 4px 10px;
+            box-shadow: 4px 4px 10px,7px 7px 6px 9px rebeccapurple;
+
+        }
+        .itm h1
+        {
+            text-shadow: 3px 2px 4px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+    <div class="itm" id="item1"><h1>card1</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repudiandae eligendi, dolor hic ut dolore voluptatum neque, corporis quis quaerat ipsa harum commodi officiis, fugit quia? Eligendi accusamus accusantium nemo consectetur sapiente quibusdam minus rerum error incidunt voluptatibus cumque facere, expedita aperiam veniam laborum. Ratione corrupti fuga sit magni quae!
+        
+    </p> </div>
+    <div class="itm" id="item2"><h1>card2</h1><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus harum voluptatum ipsam aperiam, officia minima voluptatem possimus, aut veritatis perferendis veniam neque rem officiis numquam reiciendis totam aliquam dolores eum natus corporis consequatur facere! Fuga soluta dolorum praesentium! Itaque, neque aspe
+        rnatur. Praesentium maxime exercitationem sunt officiis fugiat modi mollitia
+        fuga?</p></div>
+    </div>
+    </body>
+    </html>
